@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#ganttChart {
+    display: grid;
+    grid-template-columns: 200px auto;
+    border: 1px solid #ddd;
+}
+
+.task-list {
+    border-right: 1px solid #ddd;
+}
+
+.task-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.task-list li {
+    /* padding: 10px; */
+    
+    border-bottom: 1px solid #ddd;
+}
+
+.chart {
+    position: relative;
+}
+
+.chart-header {
+    display: flex;
+    position: sticky;
+    top: 0;
+    background: #f3f3f3;
+    border-bottom: 1px solid #ddd;
+}
+
+.chart-header div {
+    flex: 1;
+    padding: 5px;
+    text-align: center;
+    border-right: 1px solid #ddd;
+}
+
+.item-row {
+    display: flex;
+    position: relative;
+    height: 60px;
+    border-bottom: 1px solid #ddd;
+    padding: 0;
+}
+
+.chart-bar {
+    position: relative;
+    height: 59px;
+    background-color: #4CAF50;
+    border-radius: 3px;
+    border-top: 1px solid #ddd;
+    cursor: move;
+    z-index: 100;
+}
